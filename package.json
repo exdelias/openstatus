@@ -23,7 +23,10 @@
   },
   "packageManager": "pnpm@10.12.4",
   "pnpm": {
-    "onlyBuiltDependencies": ["@swc/core", "sharp"]
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "sharp"
+    ]
   },
   "name": "openstatus",
   "workspaces": [
@@ -31,5 +34,9 @@
     "packages/*",
     "packages/config/*",
     "packages/notifications/*"
-  ]
+  ],
+  "dependencies": {
+    "flag": "^5.0.1",
+    "turso": "^0.1.0"
+  }
 }
